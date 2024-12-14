@@ -1,0 +1,26 @@
+<h1>Belépés</h1>
+<div>
+  <div class="form-group">
+    <label htmlFor="username"
+    class="form-label">Felhasználónév</label>
+    <input type="text" id="username" name="username" 
+    class="form-control" placeholder="felhasználónév"
+    [(ngModel)]="username" 
+    />
+  </div>
+  <div class="form-group">
+    <label htmlFor="password"
+    class="form-label">Jelszó</label>
+    <input type="text" id="password" name="password" 
+    class="form-control" placeholder="jelszó" 
+    [(ngModel)]="password"
+    />
+  </div>
+  <div>
+    <button type="button" class="btn btn-primary my-3"
+    (click)="login($event)">
+      Belépés
+    </button>
+  </div>
+</div>
+
